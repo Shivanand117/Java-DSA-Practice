@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class RightRotateArray {
 
-    public static void reverse(int[] arr, int start, int end) {
+    public static void reversed(int[] arr, int start, int end) {
 
         while (start < end) {
 
@@ -25,13 +25,13 @@ public class RightRotateArray {
         k = k % n;
 
         // Step 1: Reverse entire array
-        reverse(arr, 0, n - 1);
+        reversed(arr, 0, n - 1);
 
         // Step 2: Reverse first k elements
-        reverse(arr, 0, k - 1);
+        reversed(arr, 0, k - 1);
 
         // Step 3: Reverse remaining elements
-        reverse(arr, k, n - 1);
+        reversed(arr, k, n - 1);
     }
 
     public static void main(String[] args) {
